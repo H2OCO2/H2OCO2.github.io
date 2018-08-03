@@ -1,0 +1,131 @@
+/*基础样式*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+	box-sizing: border-box;
+}
+/*关于我们标题*/
+.aboutus_title_bg{
+	width: 100%;
+	min-width: 1200px;
+	height: 500px;
+	margin-top:60px;
+	background: url(../img/aboutus_bg1.jpg) no-repeat top center;
+	background-size: cover;
+}
+.aboutus_title_bg .shade{
+	width: 100%;
+	min-width: 1200px;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+	text-align: center;
+	padding: 100px 0;
+}
+.aboutus_title_bg .shade h1{
+	line-height: 100px;
+	font-size: 50px;
+	font-weight: 100;
+	color: #fff;
+}
+.aboutus_title_bg .shade h2{
+	line-height: 80px;
+	color: white;
+	font-weight: 100;
+}
+/*公司简介*/
+.company_introduce{
+	width: 100%;
+	margin-top:60px;
+	padding:30px 0 90px 0;
+	overflow: hidden;
+}
+.company_introduce .company_introduceBox{
+	width: 1200px;
+	margin: 0 auto;
+}
+.company_introduce .company_introduceBox h1,.contant_us .contant_usBox h1{
+	text-align: center;
+	color: #348CFF;
+	font-size: 30px;
+	font-weight: 100;
+}
+.company_introduce .company_introduceBox b,.contant_us .contant_usBox b{
+	display: block;
+	text-align: center;
+	color: #348CFF;
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 40px;
+}
+.company_introduce .company_introduceBox p{
+	text-indent: 2rem;
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+	padding: 0 100px;
+}
+/*公司环境*/
+.company_introduce .company_condition{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top:60px;
+}
+.company_introduce .company_condition li{
+	float:left;
+	width: 33.3%;
+	padding: 0 60px;
+}
+.company_introduce .company_condition li img{
+	width:100%;
+}
+
+/*联系我们*/
+.contant_us{
+	width: 100%;
+	min-width: 1200px;
+	padding:90px 0;
+	background: #F2F6FF;
+	overflow: hidden;
+}
+.contant_us .contant_usBox{
+	width: 1200px;
+	margin: 0 auto;
+}
+.contant_us .contant_usBox p{
+	padding: 0 386px;	
+	line-height: 30px;
+}
+.contant_us .contant_usBox p i{
+	font-size: 22px;
+	margin-right: 16px;
+	color: #348CFF;
+}
+.transition{
+	width: 100%;
+	overflow: hidden;
+	transform: translateX(1800px);
+	-ms-transform: translateX(1800px);		/* IE 9 */
+	-webkit-transform: translateX(1800px);	/* Safari and Chrome */
+	-o-transform: translateX(1800px);		/* Opera */
+	-moz-transform: translateX(1800px);
+	-moz-transition: all 0.8s ease-in-out; 
+	-ms-transition: all 0.8s ease-in-out; 
+	-webkit-transition: all 0.8s ease-in-out; 
+	-o-transition: all 0.8s ease-in-out; 
+	transition: all 0.8s ease-in-out; 
+}
+.company_condition .transition{
+	-moz-transition-delay: 0.8s;
+	-ms-transition-delay: 0.8s;
+	-webkit-transition-delay: 0.8s;
+	-o-transition-delay: 0.8s;
+	transition-delay: 0.8s;
+}
+.transition.acitve{
+	transform: translateX(0);
+	-ms-transform: translateX(0);		/* IE 9 */
+	-webkit-transform: translateX(0);	/* Safari and Chrome */
+	-o-transform: translateX(0);		/* Opera */
+	-moz-transform: translateX(0);	
+}

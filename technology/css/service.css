@@ -1,0 +1,188 @@
+/*基础样式*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+	box-sizing: border-box;
+}
+/*产品标题*/
+.service_title_bg{
+	width: 100%;
+	min-width: 1200px;
+	height: 500px;
+	margin-top:60px;
+	background: url(../img/service_bg.jpg) no-repeat top center;
+	background-size: cover;
+}
+.service_title_bg .shade{
+	width: 100%;
+	min-width: 1200px;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+	text-align: center;
+	padding: 100px 0;
+}
+.service_title_bg .shade h1{
+	line-height: 100px;
+	font-size: 50px;
+	font-weight: 100;
+	color: #fff;
+}
+.service_title_bg .shade h2{
+	line-height: 80px;
+	color: white;
+	font-weight: 100;
+}
+/*服务优势*/
+.service_advantage{
+	overflow: hidden;
+	width: 100%;
+	min-width: 1200px;
+	background: url(../img/service-bg2.png) no-repeat 70% center;
+	background-size: cover;
+}
+.service_advantage h1{
+	text-align: center;
+	color: #348CFF;
+	font-size: 30px;
+	
+}
+.service_advantage ul{
+	width: 1200px;
+	margin:0 auto;
+	padding: 40px 0;
+}
+.service_advantage ul li{
+	padding: 30px 0;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.service_advantage ul li h2{
+	font-weight: 100;
+	color: #333;
+	line-height: 60px;
+}
+.service_advantage ul li p{
+	color: #888;
+	line-height: 26px;
+	padding: 0 150px;
+}
+.service_advisory{
+	width: 100%;
+	padding: 90px 0;
+	overflow: hidden;
+}
+.service_advisory .service_advisoryBox{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.service_advisory .service_advisoryBox h1{
+	text-align: center;
+	color: #348CFF;
+	font-size: 30px;
+}
+.service_advisory .service_advisoryBox>p{
+	text-align: center;
+	color: #555;
+	font-size:18px;
+	line-height: 60px;
+}
+.service_advisory .service_advisoryBox img{
+	margin-left: 210px;
+}
+.service_advisory .service_advisoryBox .advisory_text{
+	position: absolute;
+	z-index: 999;
+}
+.service_advisory .service_advisoryBox .advisory_text i{
+	font-size: 80px;
+	color: #666;
+}
+.service_advisory .service_advisoryBox .advisory_text span{
+	margin-left: 10px;
+	font-size: 30px;
+	color: #666;
+}
+.service_advisory .service_advisoryBox .advisory_text p{
+	font-size: 14px;
+	color: #999;
+	line-height: 24px;
+}
+.service_advisory .service_advisoryBox .one{
+	top:110px;
+	right:140px;
+}
+.service_advisory .service_advisoryBox .two{
+	bottom:156px;
+	right:70px;
+}
+.service_advisory .service_advisoryBox .three{
+	bottom: 20px;
+	left:140px;
+}
+.service_advisory .service_advisoryBox .four{
+	bottom: 260px;
+	left:40px;
+}
+.service_advisory .service_advisoryBox .five{
+	top:110px;
+	left:120px;
+}
+/*动画效果*/
+.transition{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	transform: translateX(1800px);
+	-ms-transform: translateX(1800px);		/* IE 9 */
+	-webkit-transform: translateX(1800px);	/* Safari and Chrome */
+	-o-transform: translateX(1800px);		/* Opera */
+	-moz-transform: translateX(1800px);
+	-moz-transition: all 0.8s ease-in-out; 
+	-ms-transition: all 0.8s ease-in-out; 
+	-webkit-transition: all 0.8s ease-in-out; 
+	-o-transition: all 0.8s ease-in-out; 
+	transition: all 0.8s ease-in-out; 
+}
+.transition.acitve{
+	-ms-transform: translateX(0);		/* IE 9 */
+	-webkit-transform: translateX(0);	/* Safari and Chrome */
+	-o-transform: translateX(0);		/* Opera */
+	-moz-transform: translateX(0);	
+	transform: translateX(0);
+}
+.transform{
+	opacity: 0;
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg); 	/* IE 9 */
+	-moz-transform:rotate(-90deg); 	/* Firefox */
+	-webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-90deg);
+	-moz-transition: all 0.8s ease-in-out; 
+	-ms-transition: all 0.8s ease-in-out; 
+	-webkit-transition: all 0.8s ease-in-out; 
+	-o-transition: all 0.8s ease-in-out; 
+	transition: all 0.8s ease-in-out; 
+	
+}
+.transform>p{
+	text-align: center;
+	color: #555;
+	font-size:18px;
+	line-height: 60px;
+	transform:rotate(0deg);
+	-ms-transform:rotate(0deg); 	/* IE 9 */
+	-moz-transform:rotate(0deg); 	/* Firefox */
+	-webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+	-o-transform:rotate(0deg); 
+}
+.transform.acitve{
+	opacity: 1;
+	transform:rotate(0deg);
+	-ms-transform:rotate(0deg); 	 IE 9 
+	-moz-transform:rotate(0deg); 	/* Firefox */
+	-webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+	-o-transform:rotate(0deg); 
+}
