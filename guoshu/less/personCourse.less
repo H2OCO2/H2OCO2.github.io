@@ -1,0 +1,98 @@
+@White:#fff;
+@Brown:#3D2428;
+@DarkBrown:#29191C;
+@DarkYellow:#FFD011;
+@lightGray:#B5B9BC;
+@lightBlue:#558EF5;
+@lightGreen:#1FDE40;
+@orange:#F01400;
+@Purper:#7446CB;
+@lightBrown:#814350;
+@darkGray:#838E90;
+@bodyBg:#483436;
+@DarkYellow2:#E48319;
+@fontColor:#818181;
+@fontColor1:#e5e0e0;
+@fontBiaoji:#A77A12;
+@fontColor2:#95989B;
+@FontSize:16px;
+.line-height(@height:40px){
+    line-height: @height;
+}
+.margin-right(@marginRight:30px){
+    margin-right: @marginRight;
+}
+.border(@width:1px,@lineStyle:border,@color:#f00){
+    border-width:@width;
+    border-style: @lineStyle;
+    border-color: @color;
+}
+.border-bottom(@width:1px,@lineStyle:border,@color:#f00){
+    border-bottom-width:@width;
+    border-bottom-style: @lineStyle;
+    border-bottom-color: @color;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    overflow: hidden;
+    zoom:1;    
+}
+.clearfix:after{
+    content:'';
+    clear:both;
+    display: block;
+    width:0;
+    height: 0;
+    visibility: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.personCourse{
+    ul{
+        li{
+            .clearfix;
+            padding: 40px 0; 
+            width: 90%;
+            position: relative;
+            border-bottom: 1px solid @fontColor1;
+                img{
+                    .fl;
+                   width: 260px; 
+                   height: auto;
+                }
+                div{
+                     .fl;
+                     margin-left: 30px;
+                    
+                     h3{
+                         font-weight: bold;
+                     }
+                     p{
+                         line-height: 40px;
+                         color: @fontColor2;
+                     }
+                     a{
+                         position: absolute;
+                         bottom: 40px;
+                         right:30px;
+                         padding: 10px;
+                         background: @lightBrown;
+                         border-radius: 3px;
+                         color: @White;
+                         font-weight: bold;
+                         cursor: pointer;
+                     }
+                }
+        }
+    }
+}
+

@@ -1,0 +1,108 @@
+li {
+	list-style: none
+}
+
+a {
+	text-decoration: none
+}
+
+.clearfix {
+	overflow: hidden;
+	zoom: 1
+}
+
+.clearfix:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	width: 0;
+	height: 0;
+	content: ''
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.messageBox {
+	overflow: hidden;
+	zoom: 1;
+	width: 100%;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	color: #fff;
+	background: url(../img/message/bg1.jpg) no-repeat;
+	background-size: cover;	
+}
+
+.messageBox .messageBox_left {
+	float: left;
+	width: 50%;
+	padding: 200px 0;
+	text-align: center
+}
+
+.messageBox .messageBox_left p {
+	font-size: 30px
+}
+
+.messageBox .messageBox_left h4 {
+	width: 30%;
+	margin: 0 auto;
+	padding: 10px;
+	background: #fac903
+}
+
+.messageBox .messageBox_right {
+	float: left;
+	width: 50%;
+	padding-top: 80px
+}
+
+.messageBox .messageBox_right div {
+	width: 50%;
+	padding: 10px 10px;
+	border-radius: 8px;
+	background: #fac903
+}
+
+.messageBox .messageBox_right div h1,
+.messageBox .messageBox_right div p {
+	color: #333
+}
+
+.messageBox .messageBox_right div h1 {
+	font-size: 32px
+}
+
+.messageBox .messageBox_right div .form-group_change {
+	margin-bottom: 0
+}
+
+.messageBox .messageBox_right div .form-control_change {
+	width: 210%
+}
+
+.messageBox .messageBox_right div .form-control_change1 {
+	width: 96%;
+	margin-top: 10px;
+	margin-left: 9px
+}
+
+.messageBox .messageBox_right div button {
+	width: 96%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	color: #fff;
+	border-color: #e48319;
+	background: #e48319
+}
+
+.containerBox .firendlyLink {
+	margin-top: 0
+}

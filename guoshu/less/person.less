@@ -1,0 +1,174 @@
+@White:#fff;
+@Brown:#3D2428;
+@DarkBrown:#29191C;
+@DarkYellow:#FFD011;
+@lightGray:#B5B9BC;
+@lightBlue:#558EF5;
+@lightGreen:#1FDE40;
+@orange:#F01400;
+@Purper:#7446CB;
+@lightBrown:#814350;
+@darkGray:#838E90;
+@bodyBg:#483436;
+@DarkYellow2:#E48319;
+@fontColor:#818181;
+@fontColor1:#e5e0e0;
+@fontBiaoji:#A77A12;
+@FontSize:16px;
+.line-height(@height:40px){
+    line-height: @height;
+}
+.margin-right(@marginRight:30px){
+    margin-right: @marginRight;
+}
+.border(@width:1px,@lineStyle:border,@color:#f00){
+    border-width:@width;
+    border-style: @lineStyle;
+    border-color: @color;
+}
+.border-bottom(@width:1px,@lineStyle:border,@color:#f00){
+    border-bottom-width:@width;
+    border-bottom-style: @lineStyle;
+    border-bottom-color: @color;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    overflow: hidden;
+    zoom:1;    
+}
+.clearfix:after{
+    content:'';
+    clear:both;
+    display: block;
+    width:0;
+    height: 0;
+    visibility: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+body{
+    background: @White; 
+}
+.personCenter{
+    margin-top:50px;    
+    .personCenterBox{
+        .personHeader{
+            background:url(../img/person/bg1.jpg) no-repeat 30%;
+            background-size: cover;
+            ul{
+                background: rgba(0,0,0,.2);
+                .clearfix;
+                height:220px;
+                overflow:visible;
+                li{
+                    .fl;
+                    img{
+                        width:240px;
+                        margin-top: 30px;
+                        border: 5px solid @Brown;
+                    }
+                    h1,p{
+                        margin-left:80px;
+                    }
+                    h1{ 
+                        margin-top: 80px;
+                        font-weight: bold;
+                        color: @White;
+                    }
+                    p{
+                        color: @fontColor1;
+                    }
+                }
+            }
+        }
+        .personContent{
+            width: 100%;
+            padding-top:100px;
+            background: @White;
+            .clearfix;
+            .personContent_left{
+                .fl;
+                width: 20%;
+                li{
+                    
+                    height: 100px;
+                    font-size: @FontSize;
+                    text-align: center; 
+                    a{
+                        color: @fontColor;
+                    }
+                    &.active a{
+                        color: @fontBiaoji;
+                    }
+                }
+            }
+            .personContent_right{
+                .fl;
+                width: 80%;
+                margin-top:-50px;
+                .biaoji{
+                    width: 90%;
+                    color: @fontBiaoji;
+                    font-size: @FontSize;
+                    border-bottom: 1px solid @fontColor1;
+                    line-height: @FontSize*2;
+                }
+                .personMessage{
+                
+                   margin-top: 40px;
+                    ul{
+                        .clearfix;
+                        width: 90%;
+                        margin:0 auto;
+                        background: rgba(93,41,52,.8);
+                        padding: 20px;
+                        li{
+                            .fl;
+                            line-height: @FontSize*2;
+                            font-size:@FontSize; 
+                            color: @White;
+                            &:nth-child(2n+1){
+                                width: 10%;
+                                text-align: left;
+                            }
+                            &:nth-child(2n){
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.exitBox{
+    position: relative;
+//  width:140px ;
+    .exit{
+        display: none;
+        position: absolute;
+        top:50px;
+        right:-50px;
+        width: 140px;
+        height: 80px;
+        background: @White;
+        text-align: center;
+        p{
+            line-height: @FontSize*2;
+            font-weight: bold;
+            color: @DarkYellow;
+        }
+        h5{
+            
+        }
+    }
+}

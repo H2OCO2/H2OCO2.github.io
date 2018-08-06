@@ -1,0 +1,48 @@
+li {
+	list-style: none
+}
+
+a {
+	text-decoration: none
+}
+
+.clearfix {
+	overflow: hidden;
+	zoom: 1
+}
+
+.clearfix:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	width: 0;
+	height: 0;
+	content: ''
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+#loginRegisterBox {
+	width: 400px;
+	height: 700px;
+	margin-top: 100px;
+	margin-left: 200px;
+	padding: 30px 20px;
+	padding-top: 10px;
+	background: #fff;
+	background: transparent
+}
+
+#loginRegisterBox .form-group {
+	margin-top: 20px
+}
+
+#loginRegisterBox #tel1 {
+	margin-top: 0
+}

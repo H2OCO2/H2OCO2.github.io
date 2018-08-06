@@ -1,0 +1,205 @@
+li {
+	list-style: none
+}
+
+a {
+	text-decoration: none
+}
+
+.clearfix {
+	overflow: hidden;
+	zoom: 1
+}
+
+.clearfix:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	width: 0;
+	height: 0;
+	content: ''
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+body {
+	background: url(../img/login/bg2.png) no-repeat;
+	background-position: 10% 100%;
+	-webkit-background-size: cover;
+	background-size: cover
+}
+
+.loginRegister {
+	margin-top: 50px
+}
+
+.loginRegister #loginRegisterBox {
+	width: 360px;
+	height: 400px;
+	margin-top: 100px;
+	margin-left: 200px;
+	padding: 30px 20px;
+	padding-top: 10px;
+	background: #fff
+}
+
+.loginRegister #loginRegisterBox .titleTabs {
+	position: relative
+}
+
+.loginRegister #loginRegisterBox .titleTabs #log,
+.loginRegister #loginRegisterBox .titleTabs #reg {
+	font-size: 17px;
+	font-size: 24px;
+	line-height: 50px;
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	margin-bottom: -1px;
+	margin-left: -50px;
+	cursor: pointer;
+	text-align: center;
+	color: #3d2428
+}
+
+.loginRegister #loginRegisterBox .titleTabs #log {
+	margin-bottom: 10px
+}
+
+.loginRegister #loginRegisterBox .titleTabs a .qiehuan {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	color: #ffd011
+}
+
+.loginRegister #loginRegisterBox .titleTabs a:hover .qiehuan {
+	text-decoration: underline
+}
+
+.loginRegister .box {
+	position: relative
+}
+
+.loginRegister .box .verify {
+	width: 100%;
+	height: 20px;
+	color: red
+}
+
+.loginRegister .box .form-group-revamp {
+	margin-bottom: 0
+}
+
+.loginRegister .box .form-group-revamp .verify {
+	width: 100%;
+	height: 20px;
+	color: red
+}
+
+.loginRegister .box .form-group-revamp .verify-code {
+	width: 160px;
+	vertical-align: middle
+}
+
+.loginRegister .box .form-group-revamp #getVerifyCode {
+	font-family: '微软雅黑';
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 36px;
+	display: inline-block;
+	width: 100px;
+	height: 36px;
+	margin-left: 10px;
+	padding: 0 5px;
+	text-align: center;
+	vertical-align: middle;
+	letter-spacing: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #29191c
+}
+
+.loginRegister .box .form-group-revamp i {
+	font-size: 21px;
+	margin-left: 10px;
+	cursor: pointer;
+	color: #838e90
+}
+
+.loginRegister .box .input-style {
+	height: 36px !important
+}
+
+.loginRegister .box .button-login {
+	width: 100%;
+	border: 0;
+	background: #814350
+}
+
+.loginRegister .box .button-login:hover {
+	opacity: .9
+}
+
+.loginRegister .box #otherLoginStyle p {
+	line-height: 80px;
+	overflow: hidden;
+	zoom: 1;
+	height: 70px
+}
+
+.loginRegister .box #otherLoginStyle p span {
+	display: block;
+	float: left;
+	margin-right: 40px
+}
+
+.loginRegister .box #otherLoginStyle p a i {
+	font-size: 17.6px;
+	line-height: 30px;
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-top: 25px;
+	margin-right: 26px;
+	color: #fff;
+	border-radius: 50%;
+	background: #b5b9bc
+}
+
+.loginRegister .box #otherLoginStyle p a .one:hover {
+	background: #f01400
+}
+
+.loginRegister .box #otherLoginStyle p a .two:hover {
+	background: #558ef5
+}
+
+.loginRegister .box #otherLoginStyle p a .three:hover {
+	background: #1fde40
+}
+
+.loginRegister .box .forgetpass {
+	position: absolute;
+	right: 10px;
+	bottom: 114px;
+	color: #333
+}
+
+.loginRegister .box .forgetpass:hover {
+	text-decoration: none;
+	color: red
+}
+
+.loginRegister .verify {
+	width: 100%;
+	height: 20px;
+	color: red
+}

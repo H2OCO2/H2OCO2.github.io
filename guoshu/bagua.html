@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv='X-UA-Compatible' content='IE=Edge,chorme=1' />
+		<meta name="author" content="wangjunli" />
+		<meta name="keywords" content="" />
+		<meta name="descript" content="" />
+		<title>八卦</title>
+		<link rel="icon" href="img/logo.png" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/news.css" />
+		<link rel="stylesheet" type="text/css" href="css/taiji.css" />
+		<!--[if lte IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="containerBox">
+			<!--导航条-->
+			<nav class="navbar navbar-default nav_transparent navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				       		<span class="sr-only">Toggle navigation</span>
+				        	<span class="icon-bar"></span>
+				        	<span class="icon-bar"></span>
+				        	<span class="icon-bar"></span>
+			      		</button>
+						<a class="navbar-brand" href="#"><img src="img/logo.png" id='logo' /></a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="active1">
+								<a href="wushuClassify.html">国术分类</a>
+								<ul>
+									<li><a href="taiji.html">太极</a></li>
+									<li><a href="xingyi.html">形意</a></li>
+									<li><a href="shaolin.html">少林</a></li>
+									<li><a href="wudang.html">武当</a></li>
+									<li><a href="hongquan.html">红拳</a></li>
+									<li><a href="yongchun.html">咏春</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="news.html">新闻动态</a>
+							</li>
+							<li>
+								<a href="message.html">信息留言</a>
+							</li>
+							<li>
+								<a href="contactUs.html">联系我们</a>
+							</li>
+						</ul>
+						<div class="touxiang fr">
+							<a href="person.html"><img src="img/touxiang1.png" alt="..." class="img-circle"></a>
+						</div>
+						<form class="navbar-form navbar-mine fr">
+							<button class="btn-mine btn-mine-login" id='loginButton'><a href="login.html">登录</a></button>
+							<button class="btn-mine btn-mine-register" id='registerButton'><a href="register.html">免费注册</a></button>
+						</form>
+					</div>
+				</div>
+			</nav>
+			<!--中间内容-->
+			<div class="banner_taiji">
+					<div class="description">
+						<h2>太极拳</h2>
+						<p>太极拳，国家级非物质文化遗产,是以中国传统儒、道哲学中的太极、阴阳辩证理念为核心思想，集颐养性情、强身健体、技击对抗等多种功能为一体，结合易学的阴阳五行之变化，中医经络学，古代的导引术和吐纳术形成的一种内外兼修、柔和、缓慢、轻灵、刚柔相济的中国传统拳术。</p>
+					</div>
+				</div>
+			<div class="article">
+				<div class="main">
+					<div class="main_left">
+						<ul>
+							<li>
+								<h2 class="text-center">太极教学视频</h2>
+								<h4 class="text-center">2017-03-26</h4>
+								<video id="video1" loop poster="img/news/a1.png" width="756" height="563" controls>
+									<source src="vedio/tj.mp4"></source>
+									<object width="500" height="300" type="application/x-shockwave-flash" data="media/movie.swf">
+										<param name="movie" value="media/movie.swf" />
+										<param name="flashvars" value="autostart=true&amp;file=media/movie.swf" />
+									</object>
+									您的浏览器不支持video，请升级浏览器
+								</video>
+								<button class="btn btn-danger btn-lg btn-mine1" id='btnPlay'>立即观看</button>
+								<!--<i class="glyphicon glyphicon-play control_play" id='play1'></i>-->
+								<!--<i class="glyphicon glyphicon-pause control_play" id="play2"></i>-->
+							</li>
+						</ul>
+					</div>
+					<div class="main_right">
+						<ul>
+							<li>
+								<h2>太极百科</h2>
+								<div>
+									<a href="">内开合的丹田呼吸是指拿什么来呼吸？</a>
+									<a href="">内外开合各有所主是指的什么？</a>
+									<a href="">内外开合之间有什么关系？</a>
+									<a href="">做开合是否可以内外开合分开做？</a>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<h2>太极养生</h2>
+								<div>
+									<div>
+										<a href="">检验一下 您打的太极拳合理吗？ /a>
+										<a href="">陈氏太极老架一路和老架二路的区别</a>
+										<a href="">练太极防膝盖疼五大诀窍</a>
+										<a href="">太极经典《陈氏太极拳图说》 论掤捋挤按，太极拳中四个主要的劲和手法。</a>
+										<a href="">论掤捋挤按，太极拳中四个主要的劲和手法。陈氏太极拳的腿部缠丝生姜泡脚的利弊？</a>
+										<a href="">陈氏太极拳的腿部缠丝生姜泡脚的利弊？</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>				
+			<!--友情链接-->
+			<div class="firendlyLink">
+				<p>友情链接</p>
+				<ul>
+					<li><a href="http://www.wfeng.net/">武林风</a></li>
+					<li><a href="http://www.baijiyuan.org/">白吉元八卦掌</a></li>
+					<li><a href="http://wushu001.cn/">武术藏经阁</a></li>
+					<li><a href="http://www.sandawang.com/">散打网</a></li>
+					<li><a href="http://www.91taiji.com/">合肥太极拳</a></li>
+					<li><a href="http://www.zhwsbl.com/">中华武术博览网</a></li>
+					<li><a href="http://xinyiquan.net/">合肥心意拳</a></li>
+					<li><a href="http://www.hftjt.cn/">合肥太极堂</a></li>
+					<li><a href="http://www.taijiquan.hk/">陈家沟国际太极院</a></li>
+					<li><a href="http://www.hongquanzh.com/">西安红拳总会</a></li>
+				</ul>
+			</div>
+			<!--底部导航-->
+			<footer>
+				<ul class="text-center">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="wushuClassify.html">国术分类</a></li>
+					<li><a href="news.html">新闻动态</a></li>
+					<li><a href="contactUs.html">联系我们</a></li>
+					<li><a href="#">常见问题</a></li>
+				</ul>
+				<p class="text-center">Copyright © 2017 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+			</footer>
+		</div>
+		<!--到顶部-->
+		<div class="return_top">
+			<i class="glyphicon glyphicon-menu-up"></i>
+		</div>
+		<script src="js/jquery_1.9.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			var btnPlay = document.getElementById("btnPlay");
+			var video1 = document.getElementById("video1");
+			var play1 = document.getElementById("play1");
+			var play2 = document.getElementById("play2");
+//			点击事件
+			btnPlay.addEventListener("click",fun,false);
+			function fun(){
+				if(video1.paused){
+					video1.play();
+					btnPlay.innerHTML = "暂停";
+				}else{
+					video1.pause();
+					btnPlay.innerHTML = "播放";
+				}
+		
+			}
+//			点击事件
+			btnPlay.addEventListener("click",btnCheckType,false);
+			function btnCheckType(){
+				if(video1.canPlayType("application/x-shockwave-flash")===""){
+					
+					console.log("该类型不支持播放，慎重啊");
+				}
+				
+			}
+		</script>
+	
+	
+	</body>
+
+</html>

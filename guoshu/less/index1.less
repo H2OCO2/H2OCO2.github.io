@@ -1,0 +1,127 @@
+@White:#fff;
+@Brown:#3D2428;
+@DarkBrown:#29191C;
+@DarkYellow:#FFD011;
+@lightGray:#B5B9BC;
+@lightBlue:#558EF5;
+@lightGreen:#1FDE40;
+@orange:#F01400;
+@Purper:#7446CB;
+@lightBrown:#814350;
+@darkGray:#838E90;
+@bodyBg:#483436;
+@DarkYellow2:#E48319;
+@fontGray:#9C9FA2;
+@FontSize:16px;
+.line-height(@height:40px){
+    line-height: @height;
+}
+.margin-right(@marginRight:30px){
+    margin-right: @marginRight;
+}
+.border(@width:1px,@lineStyle:border,@color:#f00){
+    border-width:@width;
+    border-style: @lineStyle;
+    border-color: @color;
+}
+.border-bottom(@width:1px,@lineStyle:border,@color:#f00){
+    border-bottom-width:@width;
+    border-bottom-style: @lineStyle;
+    border-bottom-color: @color;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    overflow: hidden;
+    zoom:1;    
+}
+.clearfix:after{
+    content:'';
+    clear:both;
+    display: block;
+    width:0;
+    height: 0;
+    visibility: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.great_master{
+    margin-top:50px;
+    background: url(../img/index/dashi/dashi_bg.jpg);
+    .great_master_Box{
+        background: rgba(0,0,0,.5);
+        padding: 20px 0 40px 0;
+        h1{
+            color: @White;
+        }
+        p{
+            color: @fontGray;
+            line-height: @FontSize*2;
+        }
+        .container{
+            padding: 0;
+            ul{
+                .clearfix;
+                padding: 0;
+//              margin-top:-100px;
+                li{
+                    .fl;    
+                    width:25%;
+                    height:450px;
+                    background: @White;
+                    border-radius: 3px;
+                    padding: 40px 20px;
+                    a{
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        img{
+                            width: 150px;
+                            height: 150px;
+                        }
+                        h3,h4{
+                            color: black;
+                        }
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                    &.active{
+                        background: #796F6F;
+                    }
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+                margin-bottom:0;
+            }
+        }
+    }
+}
+.contentBoxIn ul li{
+    position: relative;
+    img{
+        width:280px;
+        height:190px;
+    }
+//  .video{
+//      display: none;
+//      position: absolute;
+//      top:0;
+//      left: 0;
+//  }
+    i{
+        position: absolute;
+        left: 45%;
+        top:25%;
+        font-size: @FontSize*3;
+    }
+}

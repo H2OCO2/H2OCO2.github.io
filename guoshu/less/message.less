@@ -1,0 +1,119 @@
+@White:#fff;
+@Brown:#3D2428;
+@DarkBrown:#29191C;
+@DarkYellow:#FFD011;
+@lightGray:#B5B9BC;
+@lightBlue:#558EF5;
+@lightGreen:#1FDE40;
+@orange:#F01400;
+@Purper:#7446CB;
+@lightBrown:#814350;
+@darkGray:#838E90;
+@bodyBg:#483436;
+@DarkYellow2:#E48319;
+@FontSize:16px;
+.line-height(@height:40px){
+    line-height: @height;
+}
+.margin-right(@marginRight:30px){
+    margin-right: @marginRight;
+}
+.border(@width:1px,@lineStyle:border,@color:#f00){
+    border-width:@width;
+    border-style: @lineStyle;
+    border-color: @color;
+}
+.border-bottom(@width:1px,@lineStyle:border,@color:#f00){
+    border-bottom-width:@width;
+    border-bottom-style: @lineStyle;
+    border-bottom-color: @color;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    overflow: hidden;
+    zoom:1;    
+}
+.clearfix:after{
+    content:'';
+    clear:both;
+    display: block;
+    width:0;
+    height: 0;
+    visibility: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.messageBox{
+    width: 100%;
+    background: url(../img/message/bg1.jpg) repeat-y;
+    margin-top:50px;
+    color: @White;
+    width: 100%;
+    padding-bottom: 50px;
+    .clearfix;
+    .messageBox_left{
+        .fl;
+        width: 50%;
+        text-align: center;
+        padding: 200px 0;
+        p{
+            font-size: 30px;
+        }
+        h4{
+            background: rgba(250,201,3,1);
+            width: 30%;
+            margin:0 auto;
+            padding: 10px;
+        }
+    }
+    .messageBox_right{
+        .fl;
+         width: 50%;
+         padding-top: 30px;
+        div{
+            width: 50%;
+            background: rgba(250,201,3,1);
+            border-radius: 8px;
+            padding: 10px 10px;
+            h1,p{
+                color: #333;
+            }
+            h1{
+                font-size: 32px;
+                
+            }
+            .form-group_change{
+                margin-bottom: 0;
+            }
+            .form-control_change{
+                width: 213%;
+            }
+            .form-control_change1{
+                margin-top:10px;
+                margin-left: 9px;
+                width:93%;
+            }
+            button{
+                margin-top:20px;
+                margin-left: 10px;
+                width:93%;
+                background: @DarkYellow2;
+                border-color: @DarkYellow2;
+                color: @White;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.containerBox .firendlyLink {
+    margin-top: 0px;
+}

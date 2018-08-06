@@ -1,0 +1,153 @@
+@White:#fff;
+@Brown:#3D2428;
+@DarkBrown:#29191C;
+@DarkYellow:#FFD011;
+@lightGray:#B5B9BC;
+@lightBlue:#558EF5;
+@lightGreen:#1FDE40;
+@orange:#F01400;
+@Purper:#7446CB;
+@lightBrown:#814350;
+@darkGray:#838E90;
+@bodyBg:#483436;
+@DarkYellow2:#E48319;
+@fontColor:#818181;
+@fontColor1:#e5e0e0;
+@fontBiaoji:#A77A12;
+@FontSize:16px;
+.line-height(@height:40px){
+    line-height: @height;
+}
+.margin-right(@marginRight:30px){
+    margin-right: @marginRight;
+}
+.border(@width:1px,@lineStyle:border,@color:#f00){
+    border-width:@width;
+    border-style: @lineStyle;
+    border-color: @color;
+}
+.border-bottom(@width:1px,@lineStyle:border,@color:#f00){
+    border-bottom-width:@width;
+    border-bottom-style: @lineStyle;
+    border-bottom-color: @color;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    overflow: hidden;
+    zoom:1;    
+}
+.clearfix:after{
+    content:'';
+    clear:both;
+    display: block;
+    width:0;
+    height: 0;
+    visibility: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.banner_taiji{
+    margin-top:50px;
+    width: 100%;
+    height: 500px;
+    background: url(../img/taiji/taiji_banner.jpg) no-repeat 80% 60% ;
+    background-size:cover;
+    .description{
+        display: none;
+        width: 100%;
+        height: 500px;
+        background: rgba(0,0,0,.7);
+        padding: 50px 100px;
+        h2,p{
+            color: @White;
+//          text-align: center;
+        }
+        h2{
+            line-height: 100px;
+//          margin-bottom: 20px;
+            text-align: center;
+        }
+        p{
+//          padding: 20px 200px;
+            text-indent: 40px;
+            font-size: @FontSize;
+            line-height: 40px;
+        }
+    }
+    &:hover{
+        .description{
+            display: block;
+        }
+    }
+}
+.article{
+    .main{
+        .main_left{
+            ul{
+                li{
+                    height: auto;
+                    position: relative;
+                    button{
+                        margin-top:30px;
+                        margin-left: 10px;
+                    }
+                    .btn-mine1{
+                        background: @DarkBrown;
+                        border-color: @DarkBrown;
+                        &:hover{
+                            opacity: .9;
+                        }
+                    }
+                    .control_play{
+                        position: absolute;
+                        top:47%;
+                        left:47%;
+                        color: @Brown;
+    //                  color: @DarkYellow;
+                        font-size: 60px;
+                        cursor: pointer;
+                    }
+                    #play2{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .main_right{
+            height: auto;
+            background: transparent;
+            ul{
+//              height: 500px;
+                background: @White;
+                padding-top:10px;
+                padding-bottom: 40px;
+                border-radius: 5px;
+                li{
+                    h2{
+                        font-size: @FontSize*1.5;
+                        color: @DarkYellow;
+                    }
+                   div a{
+                       padding:0 10px;
+                       color: #333;
+                       display: block;
+                       line-height:@FontSize*2; 
+                       &:hover{
+                           color: @DarkYellow;
+                       }
+                   } 
+                }
+            }
+        }
+    }
+}
+

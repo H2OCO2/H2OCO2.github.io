@@ -1,0 +1,218 @@
+@White:#fff;
+@Brown:#3D2428;
+@DarkBrown:#29191C;
+@DarkYellow:#FFD011;
+@lightGray:#B5B9BC;
+@lightBlue:#558EF5;
+@lightGreen:#1FDE40;
+@orange:#F01400;
+@Purper:#7446CB;
+@lightBrown:#814350;
+@darkGray:#838E90;
+@bodyBg:#483436;
+@DarkYellow2:#E48319;
+@fontColor:#818181;
+@fontColor1:#e5e0e0;
+@fontBiaoji:#A77A12;
+@FontSize:16px;
+.line-height(@height:40px){
+    line-height: @height;
+}
+.margin-right(@marginRight:30px){
+    margin-right: @marginRight;
+}
+.border(@width:1px,@lineStyle:border,@color:#f00){
+    border-width:@width;
+    border-style: @lineStyle;
+    border-color: @color;
+}
+.border-bottom(@width:1px,@lineStyle:border,@color:#f00){
+    border-bottom-width:@width;
+    border-bottom-style: @lineStyle;
+    border-bottom-color: @color;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    overflow: hidden;
+    zoom:1;    
+}
+.clearfix:after{
+    content:'';
+    clear:both;
+    display: block;
+    width:0;
+    height: 0;
+    visibility: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+body{
+    background: url(../img/login/bg2.png) no-repeat;
+    background-position: 10% 100%;
+    background-size:cover ;
+}
+.loginRegister {
+    margin-top:50px;
+    
+    #loginRegisterBox {
+        width: 360px;
+        height: 400px;
+        margin-top:100px;
+        padding: 30px 20px;
+        padding-top: 10px;
+        background: #fff;
+        margin-left: 200px;
+        .titleTabs {
+            position: relative;
+            #log,#reg {
+                font-size: 17px;
+                line-height:50px;
+                display: inline-block;
+                width: 100%;
+                height: 50px;
+                margin-bottom: -1px;
+                cursor: pointer;
+                text-align: center;
+                font-size: @FontSize*1.5;
+                color: @Brown;
+                margin-left: -50px;
+            }
+            #log{
+                margin-bottom: 10px;
+            }
+            #reg{
+//              margin-bottom: 10px;
+            }
+            a{
+                .qiehuan{
+                    position: absolute;
+                    right:10px;
+                    top:20px;
+                     color: @DarkYellow;
+                }
+                &:hover .qiehuan{
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+        
+    }
+    .box {
+        position: relative;
+        .verify {
+            width: 100%;
+            height: 20px;
+            color: red;
+        }
+        .form-group-revamp {
+            margin-bottom: 0;
+            .verify {
+                width: 100%;
+                height: 20px;
+                color: red;
+            }
+            .verify-code {
+                width: 160px;
+                vertical-align: middle;
+            }
+             #getVerifyCode {
+                font-family: '微软雅黑';
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 36px;
+                display: inline-block;
+                width: 100px;
+                height: 36px;
+                margin-left: 10px;
+                padding: 0 5px;
+                text-align: center;
+                vertical-align: middle;
+                letter-spacing: 10px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #29191c
+            }
+            i{
+                font-size: 21px;
+                margin-left: 10px;
+                cursor: pointer;
+                color: #838e90;
+            }
+        }
+        .input-style {
+            height: 36px !important
+        }
+        .button-login {
+            width: 100%;
+            border: 0;
+            background: #814350;
+            &:hover {
+                opacity: .9;
+            }
+        }
+       #otherLoginStyle{
+           p {
+                line-height: 80px;
+                overflow: hidden;
+                zoom: 1;
+                height: 70px;
+                span {
+                    display: block;
+                    float: left;
+                    margin-right: 40px;
+                }
+                a {
+                    i {
+                        font-size: 17.6px;
+                        line-height: 30px;
+                        display: block;
+                        float: left;
+                        width: 30px;
+                        height: 30px;
+                        margin-top: 25px;
+                        margin-right: 26px;
+                        color: #fff;
+                        border-radius: 50%;
+                        background: #b5b9bc
+                    }
+                    .one:hover {
+                        background: #f01400;
+                    }
+                    .two:hover {
+                        background: #1fde40;
+                    }
+                    three:hover {
+                        background: #558ef5;
+                    }
+                }
+                
+            } 
+       }
+       .forgetpass{
+           position: absolute;
+           bottom:114px;
+           right:10px;
+           color: #333;
+           &:hover{
+               text-decoration: none;
+               color: red;
+           }
+       }
+    }
+    .verify{
+        width: 100%;
+        height: 20px;
+        color: red;
+    }
+    
+}

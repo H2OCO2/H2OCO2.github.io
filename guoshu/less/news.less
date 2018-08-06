@@ -1,0 +1,111 @@
+@White:#fff;
+@Brown:#3D2428;
+@DarkBrown:#29191C;
+@DarkYellow:#FFD011;
+@lightGray:#B5B9BC;
+@lightBlue:#558EF5;
+@lightGreen:#1FDE40;
+@orange:#F01400;
+@Purper:#7446CB;
+@lightBrown:#814350;
+@darkGray:#838E90;
+@bodyBg:#483436;
+@textColor1:#303030;
+@textColor22:#959595;
+@textColor33:#444443;
+@FontSize:16px;
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    overflow: hidden;
+    zoom:1;    
+}
+.clearfix:after{
+    content:'';
+    clear:both;
+    display: block;
+    width:0;
+    height: 0;
+    visibility: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.article{
+    width: 1200px;
+    margin:0 auto;
+    margin-top:90px;
+    .clearfix;
+    .main_left{
+       .fl;
+       width:70%;
+       ul{
+           padding: 0;
+           li{
+               padding: 30px;
+               border-radius: 10px;
+               height: 990px;
+               margin-bottom: 40px;
+               background: @White;
+               a{
+                   text-decoration: none;
+                   h2{
+                       color: @textColor1;
+                       padding: 10px 0;
+                       font-size: @FontSize+10px;
+                   }
+                   h4{
+                       color: @textColor22;
+                       line-height: 24px;
+                       height: 24px;
+                   }
+                   img{
+                       width: 97%;
+                       margin-left: 10px;
+                   }
+                   p{
+                       text-indent: 2em;
+                       color: @textColor33;
+                       line-height: 30px;
+                       font-size: 16px;
+                       padding: 16px 0;
+                   }
+                   button.btn-mine1{
+                       background: @DarkBrown;
+                       border:none;
+                   }
+                       button:hover{
+                           opacity: .8;
+                       }
+               }
+           }
+       }
+   }
+   .main_right{
+       .fr;
+       width: 28%;
+       background: @White;
+       height: 300px;
+       ul{
+           li{
+               .btn-mine1{
+                       background: #500D1A;
+                       border:none;
+                       margin-top:10px;
+                       margin-right:10px;
+                       &:hover{
+                           opacity: .8;
+                       }
+                   }
+                   
+           }
+       }
+   }
+}
