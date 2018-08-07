@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>git命令总结</title>
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+
+	<body>
+		<h1 class="container">
+			<div class="row">
+				<div class="col-md-9">
+					Git 命令总结(<span class="red fs18 ib">* 看不懂的用红色标记</span>)
+				</div>
+			</div>
+		</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 bd col-sm-12 fixed">
+					<ul>
+						<li class="btn btn-success">
+							<a href="#base">基础</a>
+						</li>
+						<li class="btn btn-success">
+							<a href="#branch">分支</a>
+						</li>
+						<li class="btn btn-success">
+							<a href="#remote">远程协作</a>
+						</li>
+						<li class="btn btn-success">
+							<a href="#recover">代码复原</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-9">
+					<div class="bd">
+						<a name="base">
+							<h2 class="text-center">Git基础（1）</h2>
+						</a>
+						<div class="mb10">
+							<h4>一、查看Git版本</h4>
+							<div>
+								<p><code>git --version</code></p>
+								<div class="img_box"><img src="img/2018_08_06_11_08.49.bmp" /></div>
+							</div>
+						</div>
+						<div class="mb10">
+							<h4>二、查看计算机里有哪些版本的Git版本，并选用你想要的版本(后三步看不懂)</h4>
+							<p>1.查看有哪些版本</p>
+							<p><code>which -a git</code></p>
+							<div class="red">
+								<p>2.配置.bash_profile文件，选择自己需要的版本</p>
+								<p><code>vim .bash_profile</code></p>
+								<p>3.加入需要制定环境相对路径</p>
+								<p><code>export PATH="/user/local/git/bin:$SPAH"</code></p>
+								<p>4.编辑好后，重新载入.bash_profile</p>
+								<p><code>source .bash_profile</code></p>
+							</div>
+						</div>
+						<div class="mb10">
+							<h4>三、配置自己的Git信息</h4>
+							<p>1.配置用户名</p>
+							<p><code>git config --global user.name wangjunli</code></p>
+							<p>2.配置邮箱</p>
+							<p><code>git config --global user.email 13@qq.com</code></p>
+						</div>
+						<div class="mb10">
+							<h4>四、配置的三个级别</h4>
+							<p>1.system --针对于系统</p>
+							<p>2.global --针对于当前用户</p>
+							<p>3.local --针对于当前仓库</p>
+							<p class="purple">配置的优先级：local>global>system</p>
+						</div>
+						<div class="mb10">
+							<h4>五、如何查看Git文档</h4>
+							<p>1.<code>git config --help</code></p>
+							<p>2.<code>git help config</code></p>
+						</div>
+						<div class="mb10">
+							<h4>六、重命名Git命令</h4>
+							<p>1.<code>git config --gloabl alias.co checkout</code></p>
+							<p>2.<code>git config --gloabl alias.br brach</code></p>
+							<p>3.<code>git config --gloabl alias.st status</code></p>
+							<p>4.<code>git config --gloabl alias.ci commit</code></p>
+						</div>
+					</div>
+					<div class="bd">
+						<a name="branch">
+							<h2>Git本地分支和分支合并(2)</h2>
+						</a>
+						<p>分支具有协作功能（<span class="">我们将做好的项目放到主分支上，如果想再添加新的功能时，可以放在一个新添加的分支上，等项目开发完，再将这个分支合并到主分支上</span>）。</p>
+						<div class="mb10">
+							<h4>一、Git本地创建分支</h4>
+							<p>1.新建test分支</p>
+							<p><code>git branch test</code></p>
+							<p>2.提交test分支到远程仓库</p>
+							<p><code>git push origin test:test</code></p>
+							<p>3.查看分支命令</p>
+							<p><code>git branch</code>(不带参数，列出本地已经存在的分支，而且会在分支前面加*号标记。)</p>
+							<div class="img_box">
+								<img src="img/20180807131541.png" />
+							</div>
+							<p>4.列出远程分支</p>
+							<p><code>git branch -r</code></p>
+							<div class="img_box">
+								<img src="img/20180807131645.png" />
+							</div>
+							<p>5.列出本地分支和远程分支</p>
+							<p><code>git branch -a</code></p>
+							<div class="img_box">
+								<img src="img/20180807131648.png" />
+							</div>
+							<p>6.重命名分支</p>
+							<p><code>git branch -m|-M oldbranch newbranch</code></p>
+							<p>7.删除本地分支</p>
+							<p><code>git branch -d|-D branchname</code></p>
+							<p>8.删除远程分支</p>
+							<p><code>git branch -d -r branchname</code></p>
+						</div>
+						<div class="mb10">
+							<h4>二、Git给分支起别名（打标签）</h4>
+							<p>git标签分为两种：轻量标签和附注标签</p>
+							<p><span class="purple">轻量标签</span>是指向提交对象的引用</p>
+							<p><span class="purple">附注标签</span>则是仓库中的一个独立对象。<span class="purple">建议使用附注标签</span>。</p>
+							<p>1.创建轻量标签</p>
+							<p><code>git tag v0.1.2 -light</code>（创建轻量标签不需要传递参数，直接制定标签名称即可。）</p>
+							<p>2.创建附注标签</p>
+							<p><code>git tag -a v0.1.2 -m "0.1.2版本"</code>（创建附注标签时，参数a即annotated的缩写，制定标签类型，后附标签名。参数m指定标签说明，说明信息会保存在标签对象中）</p>
+							<p>3.查看历史版本示意图</p>
+							<p><code>git log --oneline --decorate --graph --all</code></p>
+							<div class="img_box"><img src="img/20180807155105.png"/></div>
+							<p class="red">注意：用Git命令起名为“v0”，并表示他的HS值。如果不制定Hash的话，会默认制定HEAD指定的Hash（也就是当前HS），一般我们只用5-7位的Hash。</p>
+						</div>
+						<div class="mb10">
+							<h4>三、分支之间的切换</h4>
+							<p>1.切换到test分支上</p>
+							<p><code>git checkout test</code></p>
+							<p>2.创建+切换到test分支上</p>
+							<p><code>git checkout -b test</code></p>
+						</div>
+						<div class="mb10">
+							<h4>四、合并分支</h4>
+							<p>合并某分支到当前分支（eg合并dev到master）</p>
+							<p><code>git merge dev</code></p>
+						</div>
+					</div>
+					<div class="bd">
+						<a name="remote">
+							<h2>Git远程协作命令(3)</h2>
+						</a>
+						<div class="mb10">
+							<h4>一、克隆远程仓库到本地</h4>
+							<p><code>git clone https://github.com/H2OCO2/H2OCO2.github.io.git</code></p>
+							<p class="purple">注意：本地不需要再建仓库了</p>
+						</div>
+						<div class="mb10">
+							<h4>二、git push命令</h4>
+							<p>将本地分支的更新，推送到远程仓库主机上。</p>
+							<p><code>git push <远程主机名> <本地分支名>:<远程分支名></code></p>
+							<p>注意：分支推送顺序的写法是<来源地>:<目的地>,</p>
+							<p class="ml40"><span class="purple">git pull是<远程分支>:<本地分支></span></p>
+							<p class="ml40"><span class="purple">git push是<本地分支>:<远程分支></span></p>
+							<p class="ml40">如果省略本地分支名，则表示将本地分支推送与之存在“追踪关系”的远程分支（通常两者同名），</p>
+							<p class="purple ml40">如果该远程分支不存在，则会被新建。</p>
+							<p>1.本地的master分支推送到origin主机的master分支。如果远程主机上master分支不存在，则会被新建。</p>
+							<p><code>git push origin master</code></p>
+							<p>2.若省略本地分支名，则表示删除指定远程分支，因为这等同于推送一个空的本地分支到远程分支。</p>
+							<p><code>git push origin :master</code></p>
+							<p><code>git push origin ---delete master</code></p>
+							<p>上面两行代码意思相同，表示删除origin主机的master分支。</p>
+							<p>3.如果当前分支与远程分支之间存在追踪关系，则本地分支和远程分支都可以省略。</p>
+							<p><code>git push origin</code>(将当前分支推送到origin主机对应的分支)</p>
+							<p>4.如果当前分支只是一个追踪分支，则主机名也可以省略。</p>
+							<p><code>git push</code></p>
+							<p>5.推送Tags</p>
+							<p><code>git push --tags</code></p>
+							<p>6.用push删除远程分支</p>
+							<p><code>git push --delete origin feacher</code></p>
+						</div>
+					</div>
+					<div class="bd">
+						<a name="recover">
+							<h2>Git代码复原(4)</h2>
+						</a>
+						<div class="mb10">
+							<p>1.显示提交的log</p>
+							<p><code>git log -3</code></p>
+							<div class="img_box">
+								<img src="img/20180807184831.png"/>
+							</div>
+							<p>2.回滚到指定版本</p>
+							<p><code>git reset --hard commit码</code></p>
+							<p>3.强制提交</p>
+							<p><code>git push -f origin master</code></p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
