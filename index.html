@@ -12,27 +12,16 @@
 				font-size: 30px;
 			}
 			
-			li {
-				list-style: none;
-				float: left;
-				margin: 0 20px;
-				height: 142px;
-				line-height: 142px;
-			}
-			
-			li a {
-				color: #fff;
+			.ah{
 				display: block;
-				line-height: 122px;
+				width: 100%;
+				padding: 0;
+				height: 10rem;
+				line-height: 10rem!important;
+				margin-bottom: 2rem;
 			}
-			
-			li:hover a,
-			li:active a {
-				text-decoration: none;
-				color: #eee;
-			}
-			.mt20{
-				margin-top:20px;
+			.mt10{
+				margin-top:10px;
 			}
 		</style>
 	</head>
@@ -40,26 +29,20 @@
 	<body>
 		<h1 class="text-primary">项目介绍</h1>
 		<div class="container">
-			<ul class="mt20">
-				<li class="btn btn-primary btn-lg">
-					<a href="https://h2oco2.github.io/guoshu">国术教学网站</a>
-				</li>
-				<li class="btn btn-primary btn-lg">
-					<a href="https://h2oco2.github.io/technology">银河科技官网</a>
-				</li>
-				<li class="btn btn-primary btn-lg">
-					<a href="https://h2oco2.github.io/GitCommand">Git命令</a>
-				</li>
-				<li class="btn btn-primary btn-lg">
-					<a href="https://h2oco2.github.io/technology">银河科技官网</a>
-				</li>
-				<li class="btn btn-primary btn-lg">
-					<a href="https://h2oco2.github.io/guoshu">国术教学网站</a>
-				</li>
-				<li class="btn btn-primary btn-lg">
-					<a href="https://h2oco2.github.io/technology">银河科技官网</a>
-				</li>
-			</ul>
+			<div class="rows mt10">
+				<div class="col-md-3">
+					<a href="https://h2oco2.github.io/guoshu" class="btn btn-primary btn-lg ah">国术教学网站</a>
+				</div>
+				<div class="col-md-3">
+					<a href="https://h2oco2.github.io/technology" class="btn btn-primary btn-lg ah">银河科技官网</a>
+				</div>
+				<div class="col-md-3">
+					<a href="https://h2oco2.github.io/GitCommand" class="btn btn-primary btn-lg ah">Git命令</a>
+				</div>
+				<div class="col-md-3">
+					<a href="https://h2oco2.github.io" class="btn btn-primary btn-lg ah">......</a>
+				</div>
+			</div>
 		</div>
 	</body>
 
