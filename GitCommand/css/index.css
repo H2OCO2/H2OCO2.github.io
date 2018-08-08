@@ -28,6 +28,8 @@ html {
 			code {
 				font-size: 1.6rem;
 				line-height: 2.4rem;
+				word-wrap: break-word;
+    			word-break: normal;
 			}
 			
 			.red {
